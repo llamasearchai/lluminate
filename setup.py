@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="lluminate",
+    name="lluminate-llamasearch",
     version="0.1.0",
     description="A powerful tool for working with lluminate data",
     author="LlamaSearch AI",
-    author_email="info@llamasearch.ai",
+    author_email="nikjois@llamasearch.ai",
     url=f"https://github.com/hypocrite/lluminate",
     packages=find_packages(),
     classifiers=[
@@ -30,4 +30,6 @@ setup(
             "flake8>=3.8.0",
         ],
     },
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
 )
